@@ -12,7 +12,11 @@
         <script type="text/javascript" src="js/nouislider.min.js"></script>
         
         <script type="text/javascript" src="js/annotator.js"></script>
-        
+
+        <script type="text/javascript" src="http://localhost:8001/dist/spector.bundle.js"></script>
+        <!--<script type="text/javascript" src="https://raw.githubusercontent.com/meyerstim/Spector.js/master/dist/spector.bundle.js"></script>-->
+
+
         <link rel="stylesheet" href="css/nouislider.min.css">
         <link rel="stylesheet" href="css/main.css">
 
@@ -22,8 +26,13 @@
     </head>
 
     <body>
-        
-        <canvas id='viewer'></canvas>
+
+        <script>
+            var spector = new SPECTOR.Spector();
+            spector.displayUI();
+        </script>
+
+    <canvas id='viewer'></canvas>
 
         <div id='tools' class='panel'>
             <strong>Tolerance</strong>: <span id='tolerancelabel'>30</span><br>
