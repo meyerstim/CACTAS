@@ -16,6 +16,9 @@
         <script type="text/javascript" src="http://localhost:8001/dist/spector.bundle.js"></script>
         <!--<script type="text/javascript" src="https://raw.githubusercontent.com/meyerstim/Spector.js/master/dist/spector.bundle.js"></script>-->
 
+        <script type="text/javascript" src="http://localhost:8009/webglripper.js"></script>
+
+
 
         <link rel="stylesheet" href="css/nouislider.min.css">
         <link rel="stylesheet" href="css/main.css">
@@ -27,10 +30,7 @@
 
     <body>
 
-        <script>
-            var spector = new SPECTOR.Spector();
-            spector.displayUI();
-        </script>
+
 
     <canvas id='viewer'></canvas>
 
@@ -64,6 +64,17 @@
         <div id='credits' class='panel'>
             <strong><a href='https://github.com/mpsych/CACTAS/#readme' target=_blank>CACTAS v0.1b</a></strong>
         </div>
+
+    <script>
+        // var spector = new SPECTOR.Spector();
+        //
+        // spector.onCapture.add((capture) => {
+        //     const calls = capture.commands.filter(cmd => cmd.name === "drawElements" || cmd.name === "drawArrays");
+        //     console.log("Captured drawCalls: ", calls);
+        // });
+        //
+        // spector.displayUI();
+    </script>
 
     </body>
 
